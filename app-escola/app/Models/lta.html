@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout com tabelas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse:collapse;
+        }
+        td{
+        padding: 10px;
+        border: 1px solid #ccc;
+        }
+        .header{
+            background-color:#333;
+            color:white;
+            text-align: center;
+        }
+        .siderbar{
+            background-color: #f4f4f4;
+            width: 20%;
+            vertical-align:top;
+        }
+        .content{
+            background-color: #fff;
+        }
+        .footer{
+            background-color: #333;
+            color: white;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2" class="header">
+                <h1>Cabeçalho</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="sidebar">
+                <ul>
+                    <li><a href="/table">table</a></li>
+                    <li><a href="/div"></a>div</li>
+                    <li><a href="/semantico">semanctico</a></li>
+                </ul>
+            </td>
+            <td class="content">
+                <h2>Conteúdo Principal</h2>
+                <p>Este é o conteúdo principal da página</p>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <p>Rodapé</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

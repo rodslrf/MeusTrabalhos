@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Layout Semântico com CSS</title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            font-family:Arial,sans-serif;
+        }
+        header{
+            background-color: #333;
+            color:white;
+            text-align:center;
+            padding:20px 0;
+        }
+        .container{
+            display: flex;
+        }
+        .sidebar{
+            background-color: #f4f4f4;
+            width: 20%;
+            padding: 20px;
+            box-sizing:border-box;
+        }
+        .content{
+            background-color: #f4f4f4;
+            width: 80%;
+            padding:20px;
+            box-sizing:border-box;
+        }
+        footer{
+            background-color: #333;
+            color:white;
+            text-align:center;
+            padding: 10px 0;
+        }
+        ul{
+            list-style-type:none;
+            padding:0;
+        }
+        ul li{
+            margin:10px 0;
+        }
+        ul li a {
+            text-decoration:none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cabeçalho</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li style="font-size:1rem;"><a href="/table">table</a></li>
+            <li><a href="/div">div</a></li>
+            <li><a href="/semantico">semantico</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Conteúdo Principal</h2>
+            <p>Este é o conteúdo principal da página</p>
+        </div>
+    </div>
+    <div slass="footer">
+        <p>Rodapé</p>
+    </div>
+</body>
+</html>
